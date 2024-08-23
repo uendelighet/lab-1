@@ -1,0 +1,61 @@
+Diseñando con Algoritmos | Laboratorio Semana 2
+Node.js - Modules
+
+Creación de un Sistema de Gestión de Estudiantes con Módulos en 
+Node.js
+
+Descripción:
+En este laboratorio, los estudiantes de manera individual deberán 
+desarrollar un pequeño sistema para gestionar estudiantes utilizando 
+módulos en Node.js. El objetivo es que los estudiantes practiquen 
+la creación y uso de módulos, así como la manipulación de datos 
+(filtrado, mapeo, etc.).
+
+Requisitos:
+Crear un proyecto Node.js usando npm init para inicializar el 
+proyecto. Escribir un código limpio, con buen nombramiento de 
+elementos (componentes, variables, clases, etc), algoritmos 
+claros y apropiados.
+
+_______________________________________________________
+
+1. Crear el módulo de datos: LISTO
+Crear un módulo students.js que exporte un array de objetos. 
+Cada objeto representa a un estudiante con las siguientes 
+propiedades: id, name, age, grade (calificación de 0 a 100) 
+y asignatura.
+
+2. Crear módulos de utilidades: 
+Crear un módulo utils.js que exporte varias funciones 
+para manipular y consultar los datos de los estudiantes.
+2.1 Ordena a los estudiantes por el nombre (name) en orden alfabético 
+ascendente. 
+2.2 Filtra a los estudiantes que tienen una calificación (grade)  
+mayor a 80 y luego ordénalos de mayor a menor calificación.
+2.3 Calcula el promedio de las calificaciones (grade) de todos los 
+estudiantes.
+2.4 Organizar a los estudiantes en un objeto basado en 
+su curso (course).
+
+3. Crear un módulo que utilice la data de students.js para manipular  
+el DOM, creando elementos HTML de manera dinámica que permitan 
+visualizar la información de los estudiantes (id, name, age, 
+grade, course) en forma de cartas / tarjetas en el archivo principal. 
+Crear el archivo index.js: Importa y utiliza los módulos para 
+organizar a los estudiantes por curso e insertar el contenido 
+en el elemento app del DOM para visualizarlos.
+
+4. Ordenar:
+Hacer uso correcto del file system:
+name-project/
+├── node_modules/      
+├── package.json       
+├── package-lock.json   
+├── README.md 
+├── .gitignore
+├── index.html         
+├── index.js            
+├── data/               
+│   └── students.js     
+└── utils/             
+    └── utils.js
